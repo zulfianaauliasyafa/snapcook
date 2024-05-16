@@ -5,14 +5,13 @@ $dbname = 'snapcook';
 $dbconn = mysqli_connect($host, 'root', 'rahasia', $dbname);
     $username = $_POST['username'];
     $password = $_POST['password'];
-    echo $username;
-    echo $password;
 
     $sql = "INSERT INTO akun (user, password) VALUES ('$username', '$password')";
-    if ($dbconn->execute_query($sql)) {
-        header("Location: homepage.php");
+    if ($dbconn->query($sql)) {
+        header("Location: login.php");
     } else {
-                echo '<script>alert("Username atau password salah.");</script>';
+                echo '<script>alert("Masukkan password dan username dengan lengkap");</script>';
         }
+        
 // Menutup koneksi database
 $dbconn = null;;

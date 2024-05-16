@@ -72,104 +72,6 @@
                     </div>
                 </form>
 
-                <?php
-                
-                // session_start();
-                // if(isset($_SESSION["login"])){
-                //     header("Location: homepage.php");
-                //     exit();
-                // }
-                // $usernameUser1 = "pakImut@gmail.com";
-                // $passwordUser1 = "terang_bulan";
-
-            //    if($_SERVER["REQUEST_METHOD"] == "POST"){
-            //         $username = filter_input(INPUT_POST,'username');
-            //         $password =filter_input(INPUT_POST,'password');
-
-
-            //         if($username == $usernameUser1 && $password == $passwordUser1){
-            //             $_SESSION["login"] = true;
-            //             header("Location: homepage.php");
-                        
-            //             exit();
-            //         }else{
-            //             $message = "username atau password salah";
-            //             echo "<script type='text/javascript'>alert('$message');</script>";
-            //         }
-                    
-            //    }
-
-            // function readAccounts() {
-            //     $accounts = array();
-
-            //     if (file_exists('akun.txt')) {
-            //         $lines = file('akun.txt', FILE_IGNORE_NEW_LINES);
-            //         foreach ($lines as $line) {
-            //             $parts = explode(';', $line);
-            //             $username = $parts[0];
-            //             $password = $parts[1];
-            //             $accounts[$username] = $password;
-            //         }
-            //     }
-            
-            //     return $accounts;
-            // }
-
-            // function addAccount($username, $password) {
-            //     $file = fopen('akun.txt', 'a');
-            //     fwrite($file, $username . ';' . $password . "\n");
-            //     fclose($file);
-            // }
-
-            // if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-            //     $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
-            //     $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-
-            //     $accounts = readAccounts();
-            
-            //     // Cek apakah ada akun yang terdaftar
-            //     if (!empty($accounts)) {
-            //         if (isset($accounts[$username]) && $accounts[$username] === $password) {
-            //             $_SESSION["login"] = true;
-            //             header('Location: homepage.php');
-            //             exit;
-            //         } else {
-            //             echo '<script>alert("Username atau password salah.");</script>';
-            //         }
-            //     } else {
-            //         echo '<script> alert("Belum ada akun yang terdaftar. Silakan daftar terlebih dahulu.");</script>';
-            //     }
-            // }
-
-            // $file = "akun.txt"; 
-            //     $data = file_get_contents($file); 
-            //     $users = explode("\n", $data); 
-
-            //     foreach ($users as $user) {
-                    // Memisahkan username dan password
-                    // $userInfo = explode(";", $user); 
-                    // if (count($userInfo) == 2) {
-                    //   $usernameUser1 = $userInfo[0];
-                    //   $passwordUser1 = $userInfo[1];
-                  
-                    //   if($_SERVER["REQUEST_METHOD"] == "POST"){
-                    //     $username = filter_input(INPUT_POST,'username');
-                    //     $password = filter_input(INPUT_POST,'password');
-    
-                    //     if($username == $usernameUser1 && $password == $passwordUser1){
-                    //         $_SESSION["login"] = true;
-                    //         header("Location: homepage.php");
-                            
-                    //         exit();
-                    //     }else{
-                    //         $message = "username atau password salah";
-                    //         echo "<script type='text/javascript'>alert('$message');</script>";
-                    //     }    
-                    // }
-                //   }
-                // }
-                ?>
-
                 <div class="flex-row justify-content-center align-content-center">
                     <button style="border-color: black;" class="btn google">
                         <svg version="1.1" width="20" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -196,29 +98,6 @@
             </div>
         </div>
     </div>
-<!-- 
-    <div id="liveToastPassword" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <strong class="me-auto">alert</strong>
-      <small>Now</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      Password tidak boleh kosong
-    </div>
-  </div>
-
-  <div id="liveToastusername" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <strong class="me-auto">alert</strong>
-      <small>Now</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      username tidak boleh kosong
-    </div>
-  </div> -->
-
 
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script type="module">
@@ -228,39 +107,5 @@
      
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
        <script type="module" src="index.js"></script>
-    <!-- <script>
-        // username
-        function validateusername() {
-        var username = document.getElementById('username').value;
-
-        if (username === '') {
-            alert('username tidak boleh kosong');
-            return false;
-        }
-       
-
-        return true;
-        }
-
-       
-
-        // pass
-        function validatePassword() {
-        var password = document.getElementById('password').value;
-
-        if (password === '') {
-            alert('Password tidak boleh kosong');
-            return false;
-        }
-
-        return true;
-        }
-
-        // submit
-        document.getElementById('inputForm').onsubmit = function() {
-            return validateusername() && validatePassword() ;
-            }
-
-    </script> -->
 </body>
 </html>

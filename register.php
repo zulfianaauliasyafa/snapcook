@@ -63,18 +63,5 @@
         <br>
         <p>Sudah punya akun? <a href="login.php">Login disini</a></p>
     </div>
-    <?php
-
-// Fungsi untuk menambahkan akun baru ke file akun.txt
-
-// function addAccount($username, $password) {
-//     $file = fopen('akun.txt', 'a');
-//     fwrite($file, $username . ';' . $password . "\n");
-//     fclose($file);
-// }
-
-// Proses register jika form register disubmit
-
-?>
 </body>
 </html>

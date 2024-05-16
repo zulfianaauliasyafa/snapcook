@@ -1,0 +1,13 @@
+:root {
+    --primary: rgba(50, 50, 50, 1);
+    --secondary: rgba(253, 143, 19, 1);
+    --tersiary: rgba(242, 246, 247, 1);
+    --railway-font-family: "Raleway", Helvetica;
+    --railway-font-weight: 600;
+    --railway-font-size: 14px;
+    --railway-letter-spacing: 0px;
+    --railway-line-height: normal;
+    --railway-font-style: normal;
+    --soft: 0px 2px 30px 0px rgba(0, 0, 0, 0.1);
+  }
+  
